@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Nepali Learner News</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -38,12 +38,13 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
+      margin-bottom: 40px;
     }
 
     .card {
       background-color: white;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       text-decoration: none;
       color: inherit;
@@ -74,10 +75,26 @@
       margin-top: 5px;
     }
 
-    .meta {
-      color: #777;
-      font-size: 13px;
-      margin-top: 8px;
+    /* New styles for article, vocab, and discussion */
+    .article-text, .vocab-list, .discussion-questions {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      color: #333;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    .article-text h3, .vocab-list h3, .discussion-questions h3 {
+      margin-top: 0;
+      color: #3b5998;
+    }
+
+    .vocab-list ul, .discussion-questions ul {
+      list-style-type: disc;
+      padding-left: 20px;
     }
 
     /* -------------------------------
@@ -146,6 +163,70 @@
           <span class="tag">Economy & Business</span>
         </div>
       </a>
+    </div>
+
+    <!-- Article Text -->
+    <div class="article-text">
+      <h3>कर्णालीलाई अर्गानिक प्रदेश बनाउने चुनौती</h3>
+      <p>
+        कर्णाली प्रदेशलाई पूर्ण रूपमा अर्गानिक प्रदेश बनाउने योजना सुरु भए पनि,
+        त्यो सफल हुन सकेको छैन। यो प्रदेशमा धेरै किसानहरूले विषादी र रासायनिक मलको प्रयोग
+        गर्दै आएका छन्। स्थानीय बजारमा विषादीयुक्त तरकारी पनि छरिएका छन्, जसले जनस्वास्थ्यलाई
+        जोखिममा पारेको छ।
+      </p>
+      <p>
+        सरकारले विषादी र रासायनिक मलको प्रयोगमा नियन्त्रण गर्न प्रयास गरिरहेको छ, तर
+        नियम पालना नहुनु र पर्याप्त परीक्षण नहुनु समस्या बनेको छ। किसानहरूले पनि जैविक
+        खेतीमा जानलाई प्रोत्साहन र सहयोग आवश्यक छ। 
+      </p>
+      <p>
+        अर्गानिक खेतीले वातावरण संरक्षणमा मद्दत गर्छ र मानिसहरूको स्वास्थ्यलाई राम्रो बनाउँछ।
+        कर्णालीलाई अर्गानिक प्रदेश बनाउन सबै तहबाट सहकार्य गर्न जरुरी छ।
+      </p>
+    </div>
+
+    <!-- Vocabulary Section -->
+    <div class="vocab-list">
+      <h3>Vocabulary Words</h3>
+      <ul>
+        <li><strong>अर्गानिक (Organic)</strong> – रासायनिक मल र विषादी नखाने कृषि</li>
+        <li><strong>विषादी (Pesticide)</strong> – कीरा मार्ने औषधि</li>
+        <li><strong>तरकारी (Vegetable)</strong> – खाने प्रकारका सागसब्जी</li>
+        <li><strong>कृषि (Agriculture)</strong> – जमिनमा खेती गर्ने काम</li>
+        <li><strong>मल (Fertilizer)</strong> – बोटबिरुवा बढाउन प्रयोग हुने पदार्थ</li>
+        <li><strong>पर्यावरण (Environment)</strong> – प्रकृति र वरिपरि रहेको वातावरण</li>
+        <li><strong>स्वास्थ्य (Health)</strong> – शारीरिक र मानसिक स्वस्थता</li>
+        <li><strong>नियन्त्रण (Control)</strong> – नियन्त्रण गर्नु वा व्यवस्थापन गर्नु</li>
+        <li><strong>प्रदूषण (Pollution)</strong> – वातावरणमा हानीकारक पदार्थको वृद्धि</li>
+        <li><strong>सरकार (Government)</strong> – देशको प्रशासन र नियम बनाउने संस्था</li>
+        <li><strong>कृषक (Farmer)</strong> – खेती गर्ने व्यक्ति</li>
+        <li><strong>अभियान (Campaign)</strong> – कुनै उद्देश्यका लागि गरिने क्रियाकलाप</li>
+        <li><strong>निषेध (Ban)</strong> – कुनै कुरा रोक लगाउनु</li>
+        <li><strong>प्रतिस्पर्धा (Competition)</strong> – प्रतिस्पर्धा वा लडाई</li>
+        <li><strong>स्थानीय (Local)</strong> – त्यहीँको, नजिकको</li>
+        <li><strong>गुणस्तर (Quality)</strong> – राम्रो वा नराम्रो स्तर</li>
+        <li><strong>नियामक (Regulator)</strong> – नियम बनाउने वा नियन्त्रण गर्ने</li>
+        <li><strong>खाद्य उत्पादन (Food Production)</strong> – खानेकुरा उत्पादन गर्ने प्रक्रिया</li>
+        <li><strong>सहकार्य (Collaboration)</strong> – सँगै काम गर्ने प्रक्रिया</li>
+        <li><strong>असन्तुलन (Imbalance)</strong> – सन्तुलन नहुनु</li>
+      </ul>
+    </div>
+
+    <!-- Discussion Questions Section -->
+    <div class="discussion-questions">
+      <h3>Discussion Questions</h3>
+      <ul>
+        <li>कर्णालीलाई अर्गानिक प्रदेश बनाउने निर्णय किन प्रभावकारी हुन सकेन?</li>
+        <li>विषादीयुक्त तरकारीको बजार नियन्त्रणमा किन समस्या भइरहेको छ?</li>
+        <li>रासायनिक मल र विषादीमा प्रतिबन्ध लगाउँदा कृषकहरूलाई के के चुनौतीहरू आउँछन्?</li>
+        <li>स्थानीय उत्पादन र विदेशी तरकारीको प्रतिस्पर्धाले कर्णालीको कृषि क्षेत्रमा कस्तो असर पार्छ?</li>
+        <li>विषादी परीक्षण र नियन्त्रणका लागि कर्णालीमा के सुधार गर्न आवश्यक छ?</li>
+        <li>कृषकहरूलाई रासायनिक मल र विषादीबाट जैविक खेतीमा कसरी प्रोत्साहन गर्ने?</li>
+        <li>कर्णालीको अर्गानिक अभियानलाई सफल बनाउन सरकार र स्थानीय तहले के कस्ता कदम चाल्नुपर्छ?</li>
+        <li>अर्गानिक खेतीले स्वास्थ्य र वातावरणमा के कस्तो प्रभाव पार्छ?</li>
+        <li>कृषि उत्पादनको गुणस्तर सुधार्न निजी क्षेत्र र सरकारबीच कसरी सहकार्य गर्न सकिन्छ?</li>
+        <li>कर्णालीमा खाद्यान्न र तरकारी उत्पादनको असन्तुलन कसरी सुधार्न सकिन्छ?</li>
+      </ul>
     </div>
   </div>
 </body>
